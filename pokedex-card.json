@@ -1,0 +1,1059 @@
+[
+  {
+    "name": "bulbasaur",
+    "japanese": "フシギダネ",
+    "id": 1,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "ivysaur",
+    "japanese": "フシギソウ",
+    "id": 2,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "venusaur",
+    "japanese": "フシギバナ",
+    "id": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "charmander",
+    "japanese": "ヒトカゲ",
+    "id": 4,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "charmeleon",
+    "japanese": "リザード",
+    "id": 5,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "charizard",
+    "japanese": "リザードン",
+    "id": 6,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "types": ["flying","fire"]
+  },
+  {
+    "name": "squirtle",
+    "japanese": "ゼニガメ",
+    "id": 7,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "types": ["water"]
+  },
+  {
+    "name": "wartortle",
+    "japanese": "カメール",
+    "id": 8,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "types": ["water"]
+  },
+  {
+    "name": "blastoise",
+    "japanese": "カメックス",
+    "id": 9,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "types": ["water"]
+  },
+  {
+    "name": "caterpie",
+    "japanese": "キャタピー",
+    "id": 10,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "types": ["bug"]
+  },
+  {
+    "name": "metapod",
+    "japanese": "トランセル",
+    "id": 11,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "types": ["bug"]
+  },
+  {
+    "name": "butterfree",
+    "japanese": "バタフリー",
+    "id": 12,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "types": ["flying","bug"]
+  },
+  {
+    "name": "weedle",
+    "japanese": "ビードル",
+    "id": 13,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "types": ["poison","bug"]
+  },
+  {
+    "name": "kakuna",
+    "japanese": "コクーン",
+    "id": 14,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "types": ["poison","bug"]
+  },
+  {
+    "name": "beedrill",
+    "japanese": "スピアー",
+    "id": 15,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "types": ["poison","bug"]
+  },
+  {
+    "name": "pidgey",
+    "japanese": "ポッポ",
+    "id": 16,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "pidgeotto",
+    "japanese": "ピジョン",
+    "id": 17,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "pidgeot",
+    "japanese": "ピジョット",
+    "id": 18,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "rattata",
+    "japanese": "コラッタ",
+    "id": 19,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "raticate",
+    "japanese": "ラッタ",
+    "id": 20,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "spearow",
+    "japanese": "オニスズメ",
+    "id": 21,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "fearow",
+    "japanese": "オニドリル",
+    "id": 22,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "ekans",
+    "japanese": "アーボ",
+    "id": 23,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "arbok",
+    "japanese": "アーボック",
+    "id": 24,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "pikachu",
+    "japanese": "ピカチュウ",
+    "id": 25,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "raichu",
+    "japanese": "ライチュウ",
+    "id": 26,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "sandshrew",
+    "japanese": "サンド",
+    "id": 27,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "sandslash",
+    "japanese": "サンドパン",
+    "id": 28,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "nidoran-f",
+    "japanese": "ニドラン",
+    "id": 29,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "nidorina",
+    "japanese": "ニドリーナ",
+    "id": 30,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "nidoqueen",
+    "japanese": "ニドクイン",
+    "id": 31,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "types": ["ground","poison"]
+  },
+  {
+    "name": "nidoran-m",
+    "japanese": "ニドラン",
+    "id": 32,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "nidorino",
+    "japanese": "ニドリーノ",
+    "id": 33,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "nidoking",
+    "japanese": "ニドキング",
+    "id": 34,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "types": ["ground","poison"]
+  },
+  {
+    "name": "clefairy",
+    "japanese": "ピッピ",
+    "id": 35,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "types": ["fairy"]
+  },
+  {
+    "name": "clefable",
+    "japanese": "ピクシー",
+    "id": 36,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "types": ["fairy"]
+  },
+  {
+    "name": "vulpix",
+    "japanese": "ロコン",
+    "id": 37,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "ninetales",
+    "japanese": "キュウコン",
+    "id": 38,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "jigglypuff",
+    "japanese": "プリン",
+    "id": 39,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "types": ["fairy","normal"]
+  },
+  {
+    "name": "wigglytuff",
+    "japanese": "プクリン",
+    "id": 40,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "types": ["fairy","normal"]
+  },
+  {
+    "name": "zubat",
+    "japanese": "ズバット",
+    "id": 41,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "types": ["flying","poison"]
+  },
+  {
+    "name": "golbat",
+    "japanese": "ゴルバット",
+    "id": 42,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "types": ["flying","poison"]
+  },
+  {
+    "name": "oddish",
+    "japanese": "ナゾノクサ",
+    "id": 43,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "gloom",
+    "japanese": "クサイハナ",
+    "id": 44,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "vileplume",
+    "japanese": "ラフレシア",
+    "id": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "paras",
+    "japanese": "パラス",
+    "id": 46,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "types": ["grass","bug"]
+  },
+  {
+    "name": "parasect",
+    "japanese": "パラセクト",
+    "id": 47,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "types": ["grass","bug"]
+  },
+  {
+    "name": "venonat",
+    "japanese": "コンパン",
+    "id": 48,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "types": ["poison","bug"]
+  },
+  {
+    "name": "venomoth",
+    "japanese": "モルフォン",
+    "id": 49,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "types": ["poison","bug"]
+  },
+  {
+    "name": "diglett",
+    "japanese": "ディグダ",
+    "id": 50,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "dugtrio",
+    "japanese": "ダグトリオ",
+    "id": 51,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "meowth",
+    "japanese": "ニャース",
+    "id": 52,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "persian",
+    "japanese": "ペルシアン",
+    "id": 53,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "psyduck",
+    "japanese": "コダック",
+    "id": 54,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "types": ["water"]
+  },
+  {
+    "name": "golduck",
+    "japanese": "ゴルダック",
+    "id": 55,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "types": ["water"]
+  },
+  {
+    "name": "mankey",
+    "japanese": "マンキー",
+    "id": 56,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "primeape",
+    "japanese": "オコリザル",
+    "id": 57,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "growlithe",
+    "japanese": "ガーディ",
+    "id": 58,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "arcanine",
+    "japanese": "ウインディ",
+    "id": 59,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "poliwag",
+    "japanese": "ニョロモ",
+    "id": 60,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "types": ["water"]
+  },
+  {
+    "name": "poliwhirl",
+    "japanese": "ニョロゾ",
+    "id": 61,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "types": ["water"]
+  },
+  {
+    "name": "poliwrath",
+    "japanese": "ニョロボン",
+    "id": 62,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "types": ["fighting","water"]
+  },
+  {
+    "name": "abra",
+    "japanese": "ケーシィ",
+    "id": 63,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "kadabra",
+    "japanese": "ユンゲラー",
+    "id": 64,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "alakazam",
+    "japanese": "フーディン",
+    "id": 65,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "machop",
+    "japanese": "ワンリキー",
+    "id": 66,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "machoke",
+    "japanese": "ゴーリキー",
+    "id": 67,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "machamp",
+    "japanese": "カイリキー",
+    "id": 68,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "bellsprout",
+    "japanese": "マダツボミ",
+    "id": 69,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "weepinbell",
+    "japanese": "ウツドン",
+    "id": 70,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "victreebel",
+    "japanese": "ウツボット",
+    "id": 71,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "types": ["poison","grass"]
+  },
+  {
+    "name": "tentacool",
+    "japanese": "メノクラゲ",
+    "id": 72,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "types": ["poison","water"]
+  },
+  {
+    "name": "tentacruel",
+    "japanese": "ドククラゲ",
+    "id": 73,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "types": ["poison","water"]
+  },
+  {
+    "name": "geodude",
+    "japanese": "イシツブテ",
+    "id": 74,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "types": ["ground","rock"]
+  },
+  {
+    "name": "graveler",
+    "japanese": "ゴローン",
+    "id": 75,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "types": ["ground","rock"]
+  },
+  {
+    "name": "golem",
+    "japanese": "ゴローニャ",
+    "id": 76,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "types": ["ground","rock"]
+  },
+  {
+    "name": "ponyta",
+    "japanese": "ポニータ",
+    "id": 77,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "rapidash",
+    "japanese": "ギャロップ",
+    "id": 78,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "slowpoke",
+    "japanese": "ヤドン",
+    "id": 79,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "types": ["psychic","water"]
+  },
+  {
+    "name": "slowbro",
+    "japanese": "ヤドラン",
+    "id": 80,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "types": ["psychic","water"]
+  },
+  {
+    "name": "magnemite",
+    "japanese": "コイル",
+    "id": 81,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "types": ["steel","electric"]
+  },
+  {
+    "name": "magneton",
+    "japanese": "レアコイル",
+    "id": 82,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "types": ["steel","electric"]
+  },
+  {
+    "name": "farfetchd",
+    "japanese": "カモネギ",
+    "id": 83,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "doduo",
+    "japanese": "ドードー",
+    "id": 84,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "dodrio",
+    "japanese": "ドードリオ",
+    "id": 85,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "types": ["flying","normal"]
+  },
+  {
+    "name": "seel",
+    "japanese": "パウワウ",
+    "id": 86,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "types": ["water"]
+  },
+  {
+    "name": "dewgong",
+    "japanese": "ジュゴン",
+    "id": 87,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "types": ["ice","water"]
+  },
+  {
+    "name": "grimer",
+    "japanese": "ベトベター",
+    "id": 88,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "muk",
+    "japanese": "ベトベトン",
+    "id": 89,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "shellder",
+    "japanese": "シェルダー",
+    "id": 90,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "types": ["water"]
+  },
+  {
+    "name": "cloyster",
+    "japanese": "パルシェン",
+    "id": 91,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "types": ["ice","water"]
+  },
+  {
+    "name": "gastly",
+    "japanese": "ゴース",
+    "id": 92,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "types": ["poison","ghost"]
+  },
+  {
+    "name": "haunter",
+    "japanese": "ゴースト",
+    "id": 93,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "types": ["poison","ghost"]
+  },
+  {
+    "name": "gengar",
+    "japanese": "ゲンガー",
+    "id": 94,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "types": ["poison","ghost"]
+  },
+  {
+    "name": "onix",
+    "japanese": "イワーク",
+    "id": 95,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "types": ["ground","rock"]
+  },
+  {
+    "name": "drowzee",
+    "japanese": "スリープ",
+    "id": 96,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "hypno",
+    "japanese": "スリーパー",
+    "id": 97,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "krabby",
+    "japanese": "クラブ",
+    "id": 98,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "types": ["water"]
+  },
+  {
+    "name": "kingler",
+    "japanese": "キングラー",
+    "id": 99,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "types": ["water"]
+  },
+  {
+    "name": "voltorb",
+    "japanese": "ビリリダマ",
+    "id": 100,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "electrode",
+    "japanese": "マルマイン",
+    "id": 101,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "exeggcute",
+    "japanese": "タマタマ",
+    "id": 102,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "types": ["psychic","grass"]
+  },
+  {
+    "name": "exeggutor",
+    "japanese": "ナッシー",
+    "id": 103,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "types": ["psychic","grass"]
+  },
+  {
+    "name": "cubone",
+    "japanese": "カラカラ",
+    "id": 104,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "marowak",
+    "japanese": "ガラガラ",
+    "id": 105,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "types": ["ground"]
+  },
+  {
+    "name": "hitmonlee",
+    "japanese": "サワムラー",
+    "id": 106,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "hitmonchan",
+    "japanese": "エビワラー",
+    "id": 107,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "types": ["fighting"]
+  },
+  {
+    "name": "lickitung",
+    "japanese": "ベロリンガ",
+    "id": 108,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "koffing",
+    "japanese": "ドガース",
+    "id": 109,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "weezing",
+    "japanese": "マタドガス",
+    "id": 110,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "types": ["poison"]
+  },
+  {
+    "name": "rhyhorn",
+    "japanese": "サイホーン",
+    "id": 111,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "types": ["rock","ground"]
+  },
+  {
+    "name": "rhydon",
+    "japanese": "サイドン",
+    "id": 112,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "types": ["rock","ground"]
+  },
+  {
+    "name": "chansey",
+    "japanese": "ラッキー",
+    "id": 113,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "tangela",
+    "japanese": "モンジャラ",
+    "id": 114,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "types": ["grass"]
+  },
+  {
+    "name": "kangaskhan",
+    "japanese": "ガルーラ",
+    "id": 115,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "horsea",
+    "japanese": "タッツー",
+    "id": 116,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "types": ["water"]
+  },
+  {
+    "name": "seadra",
+    "japanese": "シードラ",
+    "id": 117,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "types": ["water"]
+  },
+  {
+    "name": "goldeen",
+    "japanese": "トサキント",
+    "id": 118,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "types": ["water"]
+  },
+  {
+    "name": "seaking",
+    "japanese": "アズマオウ",
+    "id": 119,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "types": ["water"]
+  },
+  {
+    "name": "staryu",
+    "japanese": "ヒトデマン",
+    "id": 120,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "types": ["water"]
+  },
+  {
+    "name": "starmie",
+    "japanese": "スターミー",
+    "id": 121,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "types": ["psychic","water"]
+  },
+  {
+    "name": "mr-mime",
+    "japanese": "バリヤード",
+    "id": 122,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "types": ["fairy","psychic"]
+  },
+  {
+    "name": "scyther",
+    "japanese": "ストライク",
+    "id": 123,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "types": ["flying","bug"]
+  },
+  {
+    "name": "jynx",
+    "japanese": "ルージュラ",
+    "id": 124,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "types": ["psychic","ice"]
+  },
+  {
+    "name": "electabuzz",
+    "japanese": "エレブー",
+    "id": 125,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "magmar",
+    "japanese": "ブーバー",
+    "id": 126,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "pinsir",
+    "japanese": "カイロス",
+    "id": 127,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "types": ["bug"]
+  },
+  {
+    "name": "tauros",
+    "japanese": "ケンタロス",
+    "id": 128,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "magikarp",
+    "japanese": "コイキング",
+    "id": 129,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "types": ["water"]
+  },
+  {
+    "name": "gyarados",
+    "japanese": "ギャラドス",
+    "id": 130,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "types": ["flying","water"]
+  },
+  {
+    "name": "lapras",
+    "japanese": "ラプラス",
+    "id": 131,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "types": ["ice","water"]
+  },
+  {
+    "name": "ditto",
+    "japanese": "メタモン",
+    "id": 132,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "eevee",
+    "japanese": "イーブイ",
+    "id": 133,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "vaporeon",
+    "japanese": "シャワーズ",
+    "id": 134,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "types": ["water"]
+  },
+  {
+    "name": "jolteon",
+    "japanese": "サンダース",
+    "id": 135,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "types": ["electric"]
+  },
+  {
+    "name": "flareon",
+    "japanese": "ブースター",
+    "id": 136,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "types": ["fire"]
+  },
+  {
+    "name": "porygon",
+    "japanese": "ポリゴン",
+    "id": 137,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "omanyte",
+    "japanese": "オムナイト",
+    "id": 138,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "types": ["water","rock"]
+  },
+  {
+    "name": "omastar",
+    "japanese": "オムスター",
+    "id": 139,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "types": ["water","rock"]
+  },
+  {
+    "name": "kabuto",
+    "japanese": "カブト",
+    "id": 140,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "types": ["water","rock"]
+  },
+  {
+    "name": "kabutops",
+    "japanese": "カブトプス",
+    "id": 141,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "types": ["water","rock"]
+  },
+  {
+    "name": "aerodactyl",
+    "japanese": "プテラ",
+    "id": 142,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "types": ["flying","rock"]
+  },
+  {
+    "name": "snorlax",
+    "japanese": "カビゴン",
+    "id": 143,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "types": ["normal"]
+  },
+  {
+    "name": "articuno",
+    "japanese": "フリーザー",
+    "id": 144,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "types": ["flying","ice"]
+  },
+  {
+    "name": "zapdos",
+    "japanese": "サンダー",
+    "id": 145,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "types": ["flying","electric"]
+  },
+  {
+    "name": "moltres",
+    "japanese": "ファイヤー",
+    "id": 146,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "types": ["flying","fire"]
+  },
+  {
+    "name": "dratini",
+    "japanese": "ミニリュウ",
+    "id": 147,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "types": ["dragon"]
+  },
+  {
+    "name": "dragonair",
+    "japanese": "ハクリュー",
+    "id": 148,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "types": ["dragon"]
+  },
+  {
+    "name": "dragonite",
+    "japanese": "カイリュー",
+    "id": 149,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "types": ["flying","dragon"]
+  },
+  {
+    "name": "mewtwo",
+    "japanese": "ミュウツー",
+    "id": 150,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "types": ["psychic"]
+  },
+  {
+    "name": "mew",
+    "japanese": "ミュウ",
+    "id": 151,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "types": ["psychic"]
+  }
+]

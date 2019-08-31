@@ -5,7 +5,6 @@ import reset from 'styled-reset'
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
-  @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,600,700&display=swap');
   body {
     background-color: papayawhip;
   }
