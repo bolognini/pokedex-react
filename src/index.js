@@ -9,7 +9,9 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path='/' exact={true} component={Home} />
-      <Route path='/pokemon/:name' component={Pokemon} />
+      <Route path='/pokemon/:name'
+        render={(props) => <Pokemon {...props} />}
+      />
       <Route path='*' component={Forbidden} />
     </Switch>
   </BrowserRouter>,
