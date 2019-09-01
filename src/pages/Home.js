@@ -9,10 +9,12 @@ const Home = () => {
   return (
     <Layout>
       {pokedex.map(pokemon => 
+      <div>
         <pokedex-card
-          href={`/pokemon/${pokemon.name}`}
           id={pokemon.id}
+          alt={pokemon.name}
           source={pokemon.sprite}
+          background={pokemon.types[0]}
         >
           <Link
             slot='name'
@@ -29,15 +31,15 @@ const Home = () => {
             <span slot={`type${index}`}>{item}</span>
           )}
         </pokedex-card>
+      </div>
       )}
-      {console.log(pokedex)}
-      {pokedex.map(pokemon =>
+      {/* {pokedex.map(pokemon =>
         <Card
           key={pokemon.id}
           name={pokemon.name}
           japanese={pokemon.japanese}
         />
-      )}
+      )} */}
     </Layout>
   )
 }
