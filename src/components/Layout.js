@@ -1,13 +1,23 @@
 import React, { Fragment } from 'react'
+import Footer from './Footer'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import reset from 'styled-reset'
 
 
 export const GlobalStyle = createGlobalStyle`
-  ${reset}
-  @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+  a {
+    text-decoration: none;
+  }
+
   body {
-    background-color: papayawhip;
+    background-color: #565362;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  pokedex-card {
+    font-family: 'Barlow Condensed', sans-serif;
   }
 `
 
@@ -17,6 +27,7 @@ const Layout = ({ children, theme }) => {
       <Fragment>
         <GlobalStyle />
         {children}
+        <Footer />
       </Fragment>
     </ThemeProvider>
   )
