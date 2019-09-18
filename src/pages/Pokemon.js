@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
+import PokemonContainer from '../components/PokemonContainer'
 import 'pokedex-webcomponents'
 
   const Home = ({ match, ...props }) => {
   const { location: { state: { japanese } } } = props
   const [pokemon, setPokemon] = useState({})
+  const [description, setDescription] = useState({})
+  const [encounters, setEncounters] = useState({})
 
   useEffect(() => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${match.params.name}`)
@@ -15,18 +18,29 @@ import 'pokedex-webcomponents'
       .catch(error => console.error(error))
   }, [match.params])
 
+  useEffect(() => {
+    fetch(`http://pokeapi.co/api/v2/pokemon-species/${match.params.name}`)
+      .then(res => res.json())
+      .then(res => {
+        setDescription(res)
+      })
+      .catch(error => console.error(error))
+  }, [match.params])
+
   return (
     <Layout>
-    
-    {console.log(props)}
-      {pokemon.results && pokemon.results.map(pokemon => <p>{pokemon.name}</p>)}
-      <h1>{pokemon.name}</h1>
-      <h2>{japanese}</h2>
-      <p>#{pokemon.id}</p>
-      {pokemon.types && pokemon.types.map(item => <p key={item.type.name}>{item.type.name}</p>)}
-
-      {pokemon.id && <img alt={pokemon.name} src={require(`../assets/pokemons/${pokemon.id}.png`)}/>}
-
+      {console.log('description', description)}
+      {console.log('pokemon', pokemon)}
+      {console.log('encounters', encounters)}
+      <PokemonContainer
+        name={pokemon.name}
+        id={pokemon.id}
+        japanese={japanese}
+        types={pokemon.types}
+        flavorText={description.flavor_text_entries}
+        height={pokemon.height}
+        weight={pokemon.weight}
+      />
     </Layout>
   )
 }
