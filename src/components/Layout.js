@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react'
-import Footer from './Footer'
+import React from 'react'
+import { element, shape } from 'prop-types'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import Footer from './Footer'
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,16 +22,23 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children, theme }) => {
-  return (
-    <ThemeProvider theme={{theme}}>
-      <Fragment>
-        <GlobalStyle />
-        {children}
-        <Footer />
-      </Fragment>
-    </ThemeProvider>
-  )
+const Layout = ({ children, theme }) => (
+  <ThemeProvider theme={{ theme }}>
+    <>
+      <GlobalStyle />
+      {children}
+      <Footer />
+    </>
+  </ThemeProvider>
+)
+
+Layout.defaultProps = {
+  theme: undefined
+}
+
+Layout.propTypes = {
+  children: element.isRequired,
+  theme: shape({})
 }
 
 export default Layout

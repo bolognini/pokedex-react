@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   background-color: #FFC90A;
   padding: 16px 56px;
   text-align: center;
@@ -9,3 +9,5 @@ export const Wrapper = styled.div`
     color: #f95788;
   }
 `
+
+export default Wrapper
