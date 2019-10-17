@@ -18,7 +18,7 @@ const Pokemon = ({ match }) => {
   }, [match.params])
 
   useEffect(() => {
-    fetch(`http://pokeapi.co/api/v2/pokemon-species/${match.params.name}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${match.params.name}`)
       .then((res) => res.json())
       .then((res) => {
         setDescription(res)
