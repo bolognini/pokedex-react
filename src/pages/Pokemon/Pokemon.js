@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { string, bool, shape } from 'prop-types'
-import Layout from '../components/Layout'
-import PokemonContainer from '../components/PokemonContainer'
+import Layout from '../../components/Layout'
+import PokemonContainer from '../../components/PokemonContainer'
 import 'pokedex-webcomponents'
 
 const Pokemon = ({ match }) => {

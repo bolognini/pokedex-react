@@ -1,14 +1,19 @@
 import React from 'react'
 import { element, shape } from 'prop-types'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import Footer from './Footer'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
+  h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+  }
 
   a {
     text-decoration: none;
+    color: unset;
   }
 
   body {
@@ -22,13 +27,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
+const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
 const Layout = ({ children, theme }) => (
   <ThemeProvider theme={{ theme }}>
-    <>
+    <Wrapper>
       <GlobalStyle />
       {children}
-      <Footer />
-    </>
+    </Wrapper>
   </ThemeProvider>
 )
 

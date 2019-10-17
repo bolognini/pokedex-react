@@ -13,29 +13,12 @@ export const SearchContainer = styled.div`
 `
 
 export const Title = styled.h2`
-  color: #FFC90A;
+  color: #facc48;
+  text-shadow: 3px 2px 0 #3663ad;
   font-weight: bold;
   font-size: 64px;
   text-align: center;
   margin: 0;
-`
-
-export const SearchInput = styled.input`
-  width: 50%;
-  padding-bottom: 8px;
-  justify-self: center;
-  border: none;
-  background: none;
-  border-bottom: 1px solid #E5E5E5;
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: lighter;
-  color: #E5E5E5;
-
-  &::placeholder {
-    color: #E5E5E5;
-  }
 `
 
 export const Pokedex = styled.div`
