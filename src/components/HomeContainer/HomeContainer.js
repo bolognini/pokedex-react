@@ -1,24 +1,31 @@
 import React from 'react'
+import { element } from 'prop-types'
+import Footer from '../Footer'
 import {
   Wrapper,
   SearchContainer,
   Title,
-  SearchInput,
   Pokedex
 } from './HomeContainer.style'
 
-const HomeContainer = ({ children }) => {
-  return (
+const HomeContainer = ({ children, searchInput }) => (
+  <>
     <Wrapper>
       <SearchContainer>
         <Title>Choose your Pokémon!</Title>
-        <SearchInput type='text' placeholder='search by name or number' />
+        {searchInput}
       </SearchContainer>
       <Pokedex>
         {children}
       </Pokedex>
     </Wrapper>
-  )
+    <Footer />
+  </>
+)
+
+HomeContainer.propTypes = {
+  children: element.isRequired,
+  searchInput: element.isRequired
 }
 
 export default HomeContainer
