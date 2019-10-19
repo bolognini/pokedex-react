@@ -22,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Barlow Condensed', sans-serif;
   }
 
+  button { 
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
   pokedex-card {
     font-family: 'Barlow Condensed', sans-serif;
   }

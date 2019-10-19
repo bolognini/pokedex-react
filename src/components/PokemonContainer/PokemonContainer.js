@@ -28,8 +28,12 @@ import {
   InfoMenu,
   InfoItem,
   InfoContainer,
-  FlavorText,
-  AnatomicInfo
+  Description,
+  Topic,
+  CaptalizeInfo,
+  CryWrapper,
+  Cry,
+  CryButton
 } from './PokemonContainer.style'
 
 const PokemonContainer = ({
@@ -40,26 +44,23 @@ const PokemonContainer = ({
   flavorText,
   height,
   weight,
-  abilities
+  abilities,
+  genera,
+  habitat
 }) => {
   const [info, setInfo] = useState('info')
-
-  const filterAbilities = (arr) => arr && arr.map((item) => {
-    const { ability: { name: abilityName } } = item
-    return abilityName
-  })
 
   const Info = () => (
     <>
       <strong>Bio</strong>
-      <FlavorText>{flavorText}</FlavorText>
-      <AnatomicInfo>
+      <Description>{flavorText}</Description>
+      <Topic>
         <strong>Height:</strong> <span>{(height / 10).toFixed(1)} m</span>
-      </AnatomicInfo>
-      <AnatomicInfo>
+      </Topic>
+      <Topic>
         <strong>Weight:</strong> <span>{(weight / 10).toFixed(1)} kg</span>
-      </AnatomicInfo>
-      <AnatomicInfo>
+      </Topic>
+      <Topic>
         <strong>Type:</strong>
         <span>{types
           && types.length > 1
@@ -75,16 +76,55 @@ const PokemonContainer = ({
             return type.charAt(0).toUpperCase() + type.slice(1)
           })}
         </span>
-      </AnatomicInfo>
+      </Topic>
     </>
   )
 
   const Abilities = () => (
     <>
-      <strong>Abilities</strong>
-      <FlavorText>{filterAbilities(abilities)}</FlavorText>
-      <div>name</div>
-      <div>effect</div>
+      {abilities && abilities.map((item) => {
+        const { ability: { name: abilityName } } = item
+        return (
+          <>
+            <Topic>
+              <strong>Name:</strong> <CaptalizeInfo>{abilityName}</CaptalizeInfo>
+            </Topic>
+            <Topic>
+              <strong>Effect:</strong> <span>...</span>
+            </Topic>
+          </>
+        )
+      })}
+    </>
+  )
+
+  const Misc = () => (
+    <>
+      <Topic>
+        <strong>Genera:</strong> <CaptalizeInfo>{genera}</CaptalizeInfo>
+      </Topic>
+      <Topic>
+        <strong>Habitat:</strong> <CaptalizeInfo>{habitat}</CaptalizeInfo>
+      </Topic>
+      <Topic>
+        <CryWrapper>
+          Cry:
+          <CryButton
+            type='button'
+            onClick={() => {
+              const audio = document.querySelector('audio')
+              return audio.play()
+            }}
+            onKeyPress={() => {
+              const audio = document.querySelector('audio')
+              return audio.play()
+            }}
+          />
+        </CryWrapper>
+        <Cry controls>
+          <source src={`https://pokemoncries.com/cries-old/${id}.mp3`} type='audio/mpeg' />
+        </Cry>
+      </Topic>
     </>
   )
 
@@ -93,7 +133,7 @@ const PokemonContainer = ({
       case 'abilities':
         return <Abilities />
       case 'misc':
-        return 'misc'
+        return <Misc />
       default:
         return <Info />
     }
@@ -172,7 +212,9 @@ PokemonContainer.defaultProps = {
   flavorText: '',
   height: undefined,
   weight: undefined,
-  abilities: []
+  abilities: [],
+  genera: '',
+  habitat: ''
 }
 
 PokemonContainer.propTypes = {
@@ -183,7 +225,9 @@ PokemonContainer.propTypes = {
   flavorText: string,
   height: number,
   weight: number,
-  abilities: arrayOf(string)
+  abilities: arrayOf(string),
+  genera: string,
+  habitat: string
 }
 
 export default PokemonContainer

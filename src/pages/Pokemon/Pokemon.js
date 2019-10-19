@@ -9,6 +9,7 @@ const Pokemon = ({ match }) => {
   const [description, setDescription] = useState({})
   const { abilities } = pokemon
   const { names } = description
+  const { genera } = description
   const { flavor_text_entries: flavorText } = description
 
   useEffect(() => {
@@ -45,6 +46,19 @@ const Pokemon = ({ match }) => {
     return redResult && redResult[0].flavor_text
   }
 
+  const findGenera = (arr) => {
+    const englishOne = arr && arr.filter((item) => {
+      const { language: { name } } = item
+      return name === 'en'
+    })
+    return englishOne && englishOne[0].genus
+  }
+
+  const findHabitatName = (obj) => {
+    const habitatName = obj && obj.habitat && obj.habitat.name
+    return habitatName
+  }
+
   return (
     <Layout>
       <PokemonContainer
@@ -56,6 +70,8 @@ const Pokemon = ({ match }) => {
         japanese={findJapaneseName(names)}
         flavorText={findRedDescription(flavorText)}
         abilities={abilities}
+        genera={findGenera(genera)}
+        habitat={findHabitatName(description)}
       />
     </Layout>
   )
