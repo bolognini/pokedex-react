@@ -39,7 +39,7 @@ const Home = () => {
             </Link>
           ))
           : pokedex.map((pokemon) => (
-            pokemon.name.includes(filteredName)
+            pokemon.name.includes(filteredName.toLowerCase())
               ? (
                 <Link to={`/pokemon/${pokemon.name}`}>
                   <pokedex-card

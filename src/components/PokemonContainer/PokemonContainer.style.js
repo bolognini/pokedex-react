@@ -191,6 +191,7 @@ export const InfoItem = styled.li`
   margin-right: 32px;
   font-size: 36px;
   color: #E5E5E5;
+  cursor: pointer;
 
   &:hover {
     box-shadow: inset 0 -100px 0 #2F2D3B;

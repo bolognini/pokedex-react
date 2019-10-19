@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #565362;
+    background-color: #901010;
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
   }

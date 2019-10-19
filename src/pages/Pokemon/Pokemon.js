@@ -7,6 +7,9 @@ import 'pokedex-webcomponents'
 const Pokemon = ({ match }) => {
   const [pokemon, setPokemon] = useState({})
   const [description, setDescription] = useState({})
+  const { abilities } = pokemon
+  const { names } = description
+  const { flavor_text_entries: flavorText } = description
 
   useEffect(() => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${match.params.name}`)
@@ -25,9 +28,6 @@ const Pokemon = ({ match }) => {
       })
       .catch((error) => console.error(error))
   }, [match.params])
-
-  const { names } = description
-  const { flavor_text_entries: flavorText } = description
 
   const findJapaneseName = (arr) => {
     const japaneseResult = arr && arr.filter((item) => {
@@ -55,6 +55,7 @@ const Pokemon = ({ match }) => {
         weight={pokemon.weight}
         japanese={findJapaneseName(names)}
         flavorText={findRedDescription(flavorText)}
+        abilities={abilities}
       />
     </Layout>
   )
