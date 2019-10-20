@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import {
   string, number, arrayOf, object
@@ -111,7 +111,7 @@ const PokemonContainer = ({
           ability: { name: abilityName }
         } = item
         return (
-          <>
+          <Fragment key={`ability-key_${abilityName}`}>
             <Topic>
               <strong>Name:</strong>{' '}
               <CaptalizeInfo>{abilityName}</CaptalizeInfo>
@@ -119,7 +119,7 @@ const PokemonContainer = ({
             <Topic>
               <strong>Effect:</strong> <span>{effectEntries[index]}</span>
             </Topic>
-          </>
+          </Fragment>
         )
       })}
     </>
@@ -205,7 +205,8 @@ const PokemonContainer = ({
                   return (
                     <img
                       alt={type}
-                      src={require(`../../assets/types/${type}.png`)}
+                      src={`../../assets/types/${type}.png`}
+                      key={`image-key_${type}`}
                     />
                   )
                 })}
@@ -218,7 +219,8 @@ const PokemonContainer = ({
               {id && (
                 <PokemonImage
                   alt={name}
-                  src={require(`../../assets/pokemons/${id}.png`)}
+                  src={`../../assets/pokemons/${id}.png`}
+                  key={`hugshot-key_${name}`}
                 />
               )}
             </ImageContainer>
