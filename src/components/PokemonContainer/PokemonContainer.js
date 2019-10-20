@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  string,
-  number,
-  arrayOf,
-  object
+  string, number, arrayOf, object
 } from 'prop-types'
 import {
   Wrapper,
@@ -49,6 +46,29 @@ const PokemonContainer = ({
   habitat
 }) => {
   const [info, setInfo] = useState('info')
+  const [effectEntries, setEffectEntries] = useState([])
+
+  useEffect(() => {
+    const entries = []
+
+    abilities.map((item) => {
+      const {
+        ability: { url: abilityUrl }
+      } = item
+
+      fetch(abilityUrl)
+        .then((res) => res.json())
+        .then((res) => {
+          entries.push(res.effect_entries[0].effect)
+        })
+        .catch((error) => console.error(error))
+        .finally(() => {
+          setEffectEntries(entries)
+        })
+
+      return item
+    })
+  }, [abilities])
 
   const Info = () => (
     <>
@@ -62,19 +82,23 @@ const PokemonContainer = ({
       </Topic>
       <Topic>
         <strong>Type:</strong>
-        <span>{types
-          && types.length > 1
-          ? types.map((item, index) => {
-            const { type: { name: type } } = item
-            if (index !== 1) {
-              return `${type.charAt(0).toUpperCase() + type.slice(1)} and `
-            }
-            return type.charAt(0).toUpperCase() + type.slice(1)
-          })
-          : types.map((item) => {
-            const { type: { name: type } } = item
-            return type.charAt(0).toUpperCase() + type.slice(1)
-          })}
+        <span>
+          {types && types.length > 1
+            ? types.map((item, index) => {
+              const {
+                type: { name: type }
+              } = item
+              if (index !== 1) {
+                return `${type.charAt(0).toUpperCase() + type.slice(1)} and `
+              }
+              return type.charAt(0).toUpperCase() + type.slice(1)
+            })
+            : types.map((item) => {
+              const {
+                type: { name: type }
+              } = item
+              return type.charAt(0).toUpperCase() + type.slice(1)
+            })}
         </span>
       </Topic>
     </>
@@ -82,15 +106,18 @@ const PokemonContainer = ({
 
   const Abilities = () => (
     <>
-      {abilities && abilities.map((item) => {
-        const { ability: { name: abilityName } } = item
+      {abilities && abilities.map((item, index) => {
+        const {
+          ability: { name: abilityName }
+        } = item
         return (
           <>
             <Topic>
-              <strong>Name:</strong> <CaptalizeInfo>{abilityName}</CaptalizeInfo>
+              <strong>Name:</strong>{' '}
+              <CaptalizeInfo>{abilityName}</CaptalizeInfo>
             </Topic>
             <Topic>
-              <strong>Effect:</strong> <span>...</span>
+              <strong>Effect:</strong> <span>{effectEntries[index]}</span>
             </Topic>
           </>
         )
@@ -122,7 +149,10 @@ const PokemonContainer = ({
           />
         </CryWrapper>
         <Cry controls>
-          <source src={`https://pokemoncries.com/cries-old/${id}.mp3`} type='audio/mpeg' />
+          <source
+            src={`https://pokemoncries.com/cries-old/${id}.mp3`}
+            type='audio/mpeg'
+          />
         </Cry>
       </Topic>
     </>
@@ -146,23 +176,17 @@ const PokemonContainer = ({
           <Link to='/'>PKMN</Link>
         </Back>
         <TopbarList>
-          {id !== 1
-            && (
+          {id !== 1 && (
             <TopbarItem>
-              <Link to={`/pokemon/${id - 1}`}>
-                {id - 1}
-              </Link>
+              <Link to={`/pokemon/${id - 1}`}>{id - 1}</Link>
             </TopbarItem>
-            )}
+          )}
           <TopbarItem current>{id}</TopbarItem>
-          {id !== 151
-            && (
+          {id !== 151 && (
             <TopbarItem>
-              <Link to={`/pokemon/${id + 1}`}>
-                {id + 1}
-              </Link>
+              <Link to={`/pokemon/${id + 1}`}>{id + 1}</Link>
             </TopbarItem>
-            )}
+          )}
         </TopbarList>
       </Topbar>
       <Content>
@@ -174,11 +198,15 @@ const PokemonContainer = ({
             </BasicInfo>
             <TypeInfo>
               <Types>
-                {types
-                && types.map((item) => {
-                  const { type: { name: type } } = item
+                {types && types.map((item) => {
+                  const {
+                    type: { name: type }
+                  } = item
                   return (
-                    <img alt={type} src={require(`../../assets/types/${type}.png`)} />
+                    <img
+                      alt={type}
+                      src={require(`../../assets/types/${type}.png`)}
+                    />
                   )
                 })}
               </Types>
@@ -187,7 +215,12 @@ const PokemonContainer = ({
           <Mugshot>
             <ImageContainer>
               <Japanese>{japanese}</Japanese>
-              {id && <PokemonImage alt={name} src={require(`../../assets/pokemons/${id}.png`)} />}
+              {id && (
+                <PokemonImage
+                  alt={name}
+                  src={require(`../../assets/pokemons/${id}.png`)}
+                />
+              )}
             </ImageContainer>
           </Mugshot>
         </Presentation>
@@ -225,7 +258,7 @@ PokemonContainer.propTypes = {
   flavorText: string,
   height: number,
   weight: number,
-  abilities: arrayOf(string),
+  abilities: arrayOf(object),
   genera: string,
   habitat: string
 }
