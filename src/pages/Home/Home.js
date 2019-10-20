@@ -22,39 +22,41 @@ const Home = () => {
           placeholder='search by name or number'
           onChange={filteredPokemon}
         />
-        )}
+      )}
       >
-        {filteredName === ''
-          ? pokedex.map((pokemon) => (
-            <Link to={`/pokemon/${pokemon.name}`}>
-              <pokedex-card
-                name={pokemon.name}
-                id={pokemon.id}
-                alt={pokemon.name}
-                source={pokemon.sprite}
-                background={pokemon.types[0]}
-              >
-                {pokemon.types.map((item, index) => <span slot={`type${index}`}>{item}</span>)}
-              </pokedex-card>
-            </Link>
-          ))
-          : pokedex.map((pokemon) => (
-            pokemon.name.includes(filteredName.toLowerCase())
-              ? (
-                <Link to={`/pokemon/${pokemon.name}`}>
-                  <pokedex-card
-                    name={pokemon.name}
-                    id={pokemon.id}
-                    alt={pokemon.name}
-                    source={pokemon.sprite}
-                    background={pokemon.types[0]}
-                  >
-                    {pokemon.types.map((item, index) => <span slot={`type${index}`}>{item}</span>)}
-                  </pokedex-card>
-                </Link>
-              )
-              : false
-          ))}
+        <>
+          {filteredName === ''
+            ? pokedex.map((pokemon) => (
+              <Link to={`/pokemon/${pokemon.name}`} key={`pokemon-key_${pokemon.name}`}>
+                <pokedex-card
+                  name={pokemon.name}
+                  id={pokemon.id}
+                  alt={pokemon.name}
+                  source={pokemon.sprite}
+                  background={pokemon.types[0]}
+                >
+                  {pokemon.types.map((item, index) => <span slot={`type${index}`} key={`type-key_${item}`}>{item}</span>)}
+                </pokedex-card>
+              </Link>
+            ))
+            : pokedex.map((pokemon) => (
+              pokemon.name.includes(filteredName.toLowerCase())
+                ? (
+                  <Link to={`/pokemon/${pokemon.name}`} key={`card-key_${pokemon.name}`}>
+                    <pokedex-card
+                      name={pokemon.name}
+                      id={pokemon.id}
+                      alt={pokemon.name}
+                      source={pokemon.sprite}
+                      background={pokemon.types[0]}
+                    >
+                      {pokemon.types.map((item, index) => <span slot={`type${index}`} key={`card-type-key_${item}`}>{item}</span>)}
+                    </pokedex-card>
+                  </Link>
+                )
+                : false
+            ))}
+        </>
       </HomeContainer>
     </Layout>
   )
