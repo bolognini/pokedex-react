@@ -59,7 +59,7 @@ const PokemonContainer = ({
       fetch(abilityUrl)
         .then((res) => res.json())
         .then((res) => {
-          entries.push(res.effect_entries[0].effect)
+          entries.push(res.effect_entries[0].short_effect)
         })
         .catch((error) => console.error(error))
         .finally(() => {
@@ -176,17 +176,17 @@ const PokemonContainer = ({
           <Link to='/'>PKMN</Link>
         </Back>
         <TopbarList>
-          {id !== 1 && (
+          {(id !== 1 && !!id) ? (
             <TopbarItem>
               <Link to={`/pokemon/${id - 1}`}>{id - 1}</Link>
             </TopbarItem>
-          )}
+          ) : null}
           <TopbarItem current>{id}</TopbarItem>
-          {id !== 151 && (
+          {(id !== 151 && !!id) ? (
             <TopbarItem>
               <Link to={`/pokemon/${id + 1}`}>{id + 1}</Link>
             </TopbarItem>
-          )}
+          ) : null}
         </TopbarList>
       </Topbar>
       <Content>
