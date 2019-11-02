@@ -2,7 +2,8 @@ import styled, { keyframes } from 'styled-components'
 
 export const Wrapper = styled.main`
   height: 100vh;
-  background-color: ${(props) => {
+  background-color:
+    ${(props) => {
     if (props.type === 'poison') {
       return '#642065'
     } if (props.type === 'ghost') {
@@ -54,7 +55,7 @@ export const Wrapper = styled.main`
       return '#CE5D6D'
     }
     return '#737373'
-  }}};
+  }};
 `
 
 export const Topbar = styled.div`
@@ -66,9 +67,11 @@ export const atention = keyframes`
   0% {
     transform: scale(1) rotate(7deg);
   }
+
   50% {
     transform: scale(1.5) rotate(7deg);
   }
+
   100% {
     transform: scale(1.15) rotate(7deg);
   }
@@ -79,12 +82,12 @@ export const Back = styled.div`
   top: 3%;
   left: 5%;
   font-size: 36px;
-  color: #facc48;
-  text-shadow: 3px 2px 0 #3663ad;
+  color: #FACC48;
+  text-shadow: 3px 2px 0 #3663AD;
   transition: all 120ms;
 
   &:hover {
-    animation: ${atention} .15s ease;
+    animation: ${atention} 0.15s ease;
     animation-fill-mode: forwards;
     transition: all 120ms;
   }
@@ -120,8 +123,7 @@ export const Content = styled.div`
   padding: 0 80px;
 `
 
-export const Presentation = styled.div`
-`
+export const Presentation = styled.div``
 
 export const Information = styled.div`
   display: flex;
@@ -151,8 +153,7 @@ export const Name = styled.h2`
   color: #E5E5E5;
 `
 
-export const Mugshot = styled.div`
-`
+export const Mugshot = styled.div``
 
 export const Japanese = styled.h2`
   font-family: 'Roboto', sans-serif;
@@ -185,7 +186,7 @@ export const InfoMenu = styled.ul`
 
 export const InfoItem = styled.li`
   background-image: linear-gradient(transparent 0%, transparent 60%, #2F2D3B 60%, #2F2D3B 100%);
-  transition: all .4s;
+  transition: all 0.4s;
   box-shadow: inset 0 0 0 #2F2D3B;
   padding: 8px;
   margin-right: 32px;
@@ -195,7 +196,7 @@ export const InfoItem = styled.li`
 
   &:hover {
     box-shadow: inset 0 -100px 0 #2F2D3B;
-    transition: all .4s;
+    transition: all 0.4s;
     box-sizing: border-box;
   }
 `

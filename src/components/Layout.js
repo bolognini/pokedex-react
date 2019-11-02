@@ -7,7 +7,15 @@ export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 
-  h1, h2, h3, h4, h5, h6, p, ul, li {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  li {
     margin: 0;
   }
 
@@ -22,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Barlow Condensed', sans-serif;
   }
 
-  button { 
+  button {
     font-family: 'Barlow Condensed', sans-serif;
   }
 

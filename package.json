@@ -16,11 +16,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint ./src/**/**/*.js"
+    "lint": "eslint src",
+    "lint:css": "stylelint src"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run lint:css"
     }
   },
   "eslintConfig": {
@@ -47,6 +48,10 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "file-loader": "^4.2.0",
     "husky": "^3.0.5",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
     "url-loader": "^2.1.0"
   }
 }

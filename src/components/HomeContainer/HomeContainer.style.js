@@ -13,8 +13,8 @@ export const SearchContainer = styled.div`
 `
 
 export const Title = styled.h2`
-  color: #facc48;
-  text-shadow: 3px 2px 0 #3663ad;
+  color: #FACC48;
+  text-shadow: 3px 2px 0 #3663AD;
   font-weight: bold;
   font-size: 64px;
   text-align: center;
