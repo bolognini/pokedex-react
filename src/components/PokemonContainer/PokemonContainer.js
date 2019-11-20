@@ -5,12 +5,14 @@ import {
 } from 'prop-types'
 import {
   Wrapper,
+  InfoWrapper,
   Topbar,
   TopbarList,
   TopbarItem,
   Back,
   Content,
   Presentation,
+  MobileInfo,
   Information,
   PresentationInfo,
   BasicInfo,
@@ -71,7 +73,7 @@ const PokemonContainer = ({
   }, [abilities])
 
   const Info = () => (
-    <>
+    <InfoWrapper>
       <strong>Bio</strong>
       <Description>{flavorText}</Description>
       <Topic>
@@ -101,7 +103,7 @@ const PokemonContainer = ({
             })}
         </span>
       </Topic>
-    </>
+    </InfoWrapper>
   )
 
   const Abilities = () => (
@@ -199,9 +201,7 @@ const PokemonContainer = ({
             <TypeInfo>
               <Types>
                 {types && types.map((item) => {
-                  const {
-                    type: { name: type }
-                  } = item
+                  const { type: { name: type } } = item
                   return (
                     <img
                       alt={type}
@@ -213,6 +213,9 @@ const PokemonContainer = ({
               </Types>
             </TypeInfo>
           </PresentationInfo>
+          <MobileInfo>
+            {infoChildrenCheck(info)}
+          </MobileInfo>
           <Mugshot>
             <ImageContainer>
               <Japanese>{japanese}</Japanese>
@@ -220,7 +223,7 @@ const PokemonContainer = ({
                 <PokemonImage
                   alt={name}
                   src={`../../assets/pokemons/${id}.png`}
-                  key={`hugshot-key_${name}`}
+                  key={`mugshot-key_${name}`}
                 />
               )}
             </ImageContainer>

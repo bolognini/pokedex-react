@@ -1,7 +1,9 @@
 import styled, { keyframes } from 'styled-components'
+import { breakpoint } from '../Layout'
 
 export const Wrapper = styled.main`
   height: 100vh;
+  padding: 16px;
   background-color:
     ${(props) => {
     if (props.type === 'poison') {
@@ -91,6 +93,10 @@ export const Back = styled.div`
     animation-fill-mode: forwards;
     transition: all 120ms;
   }
+
+  ${breakpoint.mobile} {
+    display: none;
+  }
 `
 
 export const TopbarList = styled.ul`
@@ -98,6 +104,10 @@ export const TopbarList = styled.ul`
   justify-content: center;
   list-style: none;
   padding: 24px 0 32px 0;
+
+  ${breakpoint.mobile} {
+    display: none;
+  }
 `
 
 export const TopbarItem = styled.li`
@@ -121,20 +131,48 @@ export const Content = styled.div`
   grid-template-columns: 70% 30%;
   grid-gap: 24px;
   padding: 0 80px;
+
+  ${breakpoint.mobile} {
+    grid-template: none;
+    padding: 0;
+    height: 100%;
+  }
 `
 
-export const Presentation = styled.div``
+export const Presentation = styled.div`
+  ${breakpoint.mobile} {
+    display: grid;
+    grid-template-rows: 142px 1fr;
+  }
+`
 
 export const Information = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 64px;
+
+  ${breakpoint.mobile} {
+    display: none;
+  }
 `
 
 export const PresentationInfo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${breakpoint.mobile} {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+  }
+`
+
+export const MobileInfo = styled.div`
+  display: none;
+
+  ${breakpoint.mobile} {
+    display: block;
+  }
 `
 
 export const BasicInfo = styled.div``
@@ -160,22 +198,47 @@ export const Japanese = styled.h2`
   font-size: 114px;
   opacity: 0.4;
   position: absolute;
+
+  ${breakpoint.mobile} {
+    font-size: 36px;
+    position: unset;
+  }
 `
 
 export const Types = styled.div`
   display: flex;
   padding-right: 56px;
+
+  img {
+    ${breakpoint.mobile} {
+      height: 100%;
+      width: 20%;
+    }
+  }
 `
 
 export const ImageContainer = styled.div`
   height: 50%;
   width: 60%;
+
+  ${breakpoint.mobile} {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
 `
 
 export const PokemonImage = styled.img`
   max-height: 100%;
   max-width: 100%;
   padding-left: 50%;
+
+  ${breakpoint.mobile} {
+    padding: 56px 0 0 0;
+  }
 `
 
 export const InfoMenu = styled.ul`
@@ -224,6 +287,18 @@ export const Topic = styled.div`
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   align-items: center;
+`
+
+export const InfoWrapper = styled.div`
+  ${breakpoint.mobile} {
+    & > strong:first-child {
+      display: none;
+    }
+
+    & > ${Topic}:nth-of-type(4) {
+      display: none;
+    }
+  }
 `
 
 export const CaptalizeInfo = styled.span`
