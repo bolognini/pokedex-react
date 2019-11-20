@@ -2,6 +2,10 @@ import React from 'react'
 import { element, shape } from 'prop-types'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 
+export const breakpoint = {
+  mobile: '@media (min-width: 320px) and (max-width: 767px)',
+  tablet: '@media (min-width: 768px) and (max-width: 1024px)'
+}
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');

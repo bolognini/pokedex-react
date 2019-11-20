@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoint } from '../../components/Layout'
 
 export default styled.input`
   width: 50%;
@@ -15,5 +16,9 @@ export default styled.input`
 
   &::placeholder {
     color: #E5E5E5;
+  }
+
+  ${breakpoint.mobile} {
+    width: 80%;
   }
 `
