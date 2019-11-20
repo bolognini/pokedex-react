@@ -1,8 +1,13 @@
 import styled from 'styled-components'
+import { breakpoint } from '../Layout'
 
 export const Wrapper = styled.div`
   padding: 64px;
   font-family: 'Barlow Condensed', sans-serif;
+
+  ${breakpoint.mobile} {
+    padding: 64px 0;
+  }
 `
 
 export const SearchContainer = styled.div`
@@ -26,4 +31,8 @@ export const Pokedex = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   justify-items: center;
   grid-row-gap: 20px;
+
+  ${breakpoint.mobile} {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 `
