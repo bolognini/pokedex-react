@@ -13,9 +13,17 @@ export default styled.input`
   font-style: italic;
   font-weight: lighter;
   color: #E5E5E5;
+  outline: none;
+  transition: 0.2s ease-out;
 
   &::placeholder {
     color: #E5E5E5;
+  }
+
+  &:focus {
+    border-bottom-width: 3px;
+    padding: 3px;
+    transition: 0.2s ease-in;
   }
 
   ${breakpoint.mobile} {

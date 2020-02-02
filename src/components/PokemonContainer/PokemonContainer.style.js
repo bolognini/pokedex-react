@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import { breakpoint } from '../Layout'
 
 export const Wrapper = styled.main`
-  height: 100vh;
+  min-height: 100vh;
   padding: 16px;
   background-color:
     ${(props) => {
@@ -218,12 +218,8 @@ export const Types = styled.div`
 `
 
 export const ImageContainer = styled.div`
-  height: 50%;
-  width: 60%;
-
   ${breakpoint.mobile} {
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column-reverse;
     align-items: center;
     height: 100%;
@@ -232,12 +228,12 @@ export const ImageContainer = styled.div`
 `
 
 export const PokemonImage = styled.img`
-  max-height: 100%;
-  max-width: 100%;
-  padding-left: 50%;
+  float: right;
+  max-height: 65vh;
 
   ${breakpoint.mobile} {
-    padding: 56px 0 0 0;
+    max-height: 48vh;
+    max-width: 88vw;
   }
 `
 
@@ -265,8 +261,20 @@ export const InfoItem = styled.li`
 `
 
 export const InfoContainer = styled.div`
-  padding-top: 64px;
+  margin-top: 64px;
+  padding-right: 24px;
   color: #E5E5E5;
+  max-height: 400px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: #2F2D3B;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #E5E5E5;
+  }
 
   strong {
     font-weight: bold;
@@ -276,53 +284,4 @@ export const InfoContainer = styled.div`
   span {
     font-size: 18px;
   }
-`
-
-export const Description = styled.div`
-  padding: 24px 0 32px 0;
-`
-
-export const Topic = styled.div`
-  padding-bottom: 24px;
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  align-items: center;
-`
-
-export const InfoWrapper = styled.div`
-  ${breakpoint.mobile} {
-    & > strong:first-child {
-      display: none;
-    }
-
-    & > ${Topic}:nth-of-type(4) {
-      display: none;
-    }
-  }
-`
-
-export const CaptalizeInfo = styled.span`
-  text-transform: capitalize;
-`
-
-export const CryWrapper = styled.strong`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`
-
-export const Cry = styled.audio`
-  display: none;
-`
-
-export const CryButton = styled.button`
-  background: none;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-left: 20px solid #2F2D3B;
-  border-right: none;
-  border-bottom: 10px solid transparent;
-  margin-left: 16px;
 `

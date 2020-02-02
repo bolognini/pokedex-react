@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 
+  * {
+    box-sizing: border-box;
+  }
+
   h1,
   h2,
   h3,
