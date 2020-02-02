@@ -142,7 +142,7 @@ export const Content = styled.div`
 export const Presentation = styled.div`
   ${breakpoint.mobile} {
     display: grid;
-    grid-template-rows: 142px 1fr;
+    grid-template-rows: 76px 1fr;
   }
 `
 
@@ -163,12 +163,14 @@ export const PresentationInfo = styled.div`
 
   ${breakpoint.mobile} {
     display: grid;
-    grid-template-rows: 5fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: end;
   }
 `
 
 export const MobileInfo = styled.div`
   display: none;
+  color: #E5E5E5;
 
   ${breakpoint.mobile} {
     display: block;
@@ -189,6 +191,10 @@ export const Name = styled.h2`
   font-weight: bold;
   text-transform: capitalize;
   color: #E5E5E5;
+
+  ${breakpoint.mobile} {
+    font-size: 40px;
+  }
 `
 
 export const Mugshot = styled.div``
@@ -207,7 +213,7 @@ export const Japanese = styled.h2`
 
 export const Types = styled.div`
   display: flex;
-  padding-right: 56px;
+  padding: 0 56px 4px 0;
 
   img {
     ${breakpoint.mobile} {

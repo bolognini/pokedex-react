@@ -4,6 +4,7 @@ import { breakpoint } from '../Layout'
 export const Wrapper = styled.div`
   padding: 64px;
   font-family: 'Barlow Condensed', sans-serif;
+  background-color: #901010;
 
   ${breakpoint.mobile} {
     padding: 64px 0;
