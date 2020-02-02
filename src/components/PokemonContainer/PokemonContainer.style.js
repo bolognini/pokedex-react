@@ -194,6 +194,7 @@ export const Name = styled.h2`
 
   ${breakpoint.mobile} {
     font-size: 40px;
+    margin-right: 16px;
   }
 `
 
