@@ -6,8 +6,9 @@
   ],
   "rules": {
     "selector-type-no-unknown": [true, {
-      "ignore": ["custom-elements"]
+      "ignore": ["custom-elements", "default-namespace"]
     }],
-    "color-hex-case": "upper"
+    "color-hex-case": "upper",
+    "no-descending-specificity": null
   }
 }

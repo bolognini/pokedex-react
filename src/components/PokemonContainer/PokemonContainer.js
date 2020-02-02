@@ -1,8 +1,14 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  string, number, arrayOf, object
+  string,
+  number,
+  arrayOf,
+  object
 } from 'prop-types'
+import Info from '../Info'
+import Abilities from '../Abilities'
+import Misc from '../Misc'
 import {
   Wrapper,
   Topbar,
@@ -11,6 +17,7 @@ import {
   Back,
   Content,
   Presentation,
+  MobileInfo,
   Information,
   PresentationInfo,
   BasicInfo,
@@ -24,13 +31,7 @@ import {
   PokemonImage,
   InfoMenu,
   InfoItem,
-  InfoContainer,
-  Description,
-  Topic,
-  CaptalizeInfo,
-  CryWrapper,
-  Cry,
-  CryButton
+  InfoContainer
 } from './PokemonContainer.style'
 
 const PokemonContainer = ({
@@ -70,102 +71,32 @@ const PokemonContainer = ({
     })
   }, [abilities])
 
-  const Info = () => (
-    <>
-      <strong>Bio</strong>
-      <Description>{flavorText}</Description>
-      <Topic>
-        <strong>Height:</strong> <span>{(height / 10).toFixed(1)} m</span>
-      </Topic>
-      <Topic>
-        <strong>Weight:</strong> <span>{(weight / 10).toFixed(1)} kg</span>
-      </Topic>
-      <Topic>
-        <strong>Type:</strong>
-        <span>
-          {types && types.length > 1
-            ? types.map((item, index) => {
-              const {
-                type: { name: type }
-              } = item
-              if (index !== 1) {
-                return `${type.charAt(0).toUpperCase() + type.slice(1)} and `
-              }
-              return type.charAt(0).toUpperCase() + type.slice(1)
-            })
-            : types.map((item) => {
-              const {
-                type: { name: type }
-              } = item
-              return type.charAt(0).toUpperCase() + type.slice(1)
-            })}
-        </span>
-      </Topic>
-    </>
-  )
-
-  const Abilities = () => (
-    <>
-      {abilities && abilities.map((item, index) => {
-        const {
-          ability: { name: abilityName }
-        } = item
-        return (
-          <Fragment key={`ability-key_${abilityName}`}>
-            <Topic>
-              <strong>Name:</strong>{' '}
-              <CaptalizeInfo>{abilityName}</CaptalizeInfo>
-            </Topic>
-            <Topic>
-              <strong>Effect:</strong> <span>{effectEntries[index]}</span>
-            </Topic>
-          </Fragment>
-        )
-      })}
-    </>
-  )
-
-  const Misc = () => (
-    <>
-      <Topic>
-        <strong>Genera:</strong> <CaptalizeInfo>{genera}</CaptalizeInfo>
-      </Topic>
-      <Topic>
-        <strong>Habitat:</strong> <CaptalizeInfo>{habitat}</CaptalizeInfo>
-      </Topic>
-      <Topic>
-        <CryWrapper>
-          Cry:
-          <CryButton
-            type='button'
-            onClick={() => {
-              const audio = document.querySelector('audio')
-              return audio.play()
-            }}
-            onKeyPress={() => {
-              const audio = document.querySelector('audio')
-              return audio.play()
-            }}
-          />
-        </CryWrapper>
-        <Cry controls>
-          <source
-            src={`https://pokemoncries.com/cries-old/${id}.mp3`}
-            type='audio/mpeg'
-          />
-        </Cry>
-      </Topic>
-    </>
-  )
-
   const infoChildrenCheck = (children) => {
     switch (children) {
       case 'abilities':
-        return <Abilities />
+        return (
+          <Abilities
+            abilities={abilities}
+            effectEntries={effectEntries}
+          />
+        )
       case 'misc':
-        return <Misc />
+        return (
+          <Misc
+            genera={genera}
+            habitat={habitat}
+            id={id}
+          />
+        )
       default:
-        return <Info />
+        return (
+          <Info
+            flavorText={flavorText}
+            height={height}
+            weight={weight}
+            types={types}
+          />
+        )
     }
   }
 
@@ -199,9 +130,7 @@ const PokemonContainer = ({
             <TypeInfo>
               <Types>
                 {types && types.map((item) => {
-                  const {
-                    type: { name: type }
-                  } = item
+                  const { type: { name: type } } = item
                   return (
                     <img
                       alt={type}
@@ -213,6 +142,9 @@ const PokemonContainer = ({
               </Types>
             </TypeInfo>
           </PresentationInfo>
+          <MobileInfo>
+            {infoChildrenCheck(info)}
+          </MobileInfo>
           <Mugshot>
             <ImageContainer>
               <Japanese>{japanese}</Japanese>
@@ -220,7 +152,7 @@ const PokemonContainer = ({
                 <PokemonImage
                   alt={name}
                   src={`../../assets/pokemons/${id}.png`}
-                  key={`hugshot-key_${name}`}
+                  key={`mugshot-key_${name}`}
                 />
               )}
             </ImageContainer>
