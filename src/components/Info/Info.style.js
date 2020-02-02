@@ -11,6 +11,7 @@ export const Topic = styled.div`
     display: flex;
     justify-content: center;
     font-size: 24px;
+    padding-bottom: 16px;
   }
 
   strong {
@@ -31,10 +32,9 @@ export const InfoWrapper = styled.div`
 `
 
 export const Description = styled.div`
-  padding: 24px 0 32px 0;
+  padding: 16px 0 16px 0;
 
   ${breakpoint.mobile} {
-    text-align: center;
     font-size: 18px;
   }
 `
