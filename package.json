@@ -16,14 +16,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --no-cache --coverage --watchAll",
-    "test:ci": "npm run test -- --no-cache --runInBand",
+    "test:ci": "npm run test -- --no-cache --coverage --runInBand",
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint:css": "stylelint src"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint && npm run lint:css && CI=true npm run test:ci"
+      "pre-commit": "npm run lint && npm run lint:css && CI=true npm run test:ci"
     }
   },
   "eslintConfig": {
@@ -39,10 +39,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 80,
-        "branches": 80,
-        "functions": 80,
-        "lines": 80
+        "statements": 50,
+        "branches": 50,
+        "functions": 50,
+        "lines": 50
       }
     }
   },
