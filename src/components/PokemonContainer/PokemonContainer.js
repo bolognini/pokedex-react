@@ -161,7 +161,7 @@ const PokemonContainer = ({
         <Information>
           <InfoMenu>
             <InfoItem onClick={() => setInfo('info')}>info</InfoItem>
-            <InfoItem onClick={() => setInfo('abilities')}>abilites</InfoItem>
+            <InfoItem onClick={() => setInfo('abilities')}>abilities</InfoItem>
             <InfoItem onClick={() => setInfo('misc')}>misc</InfoItem>
           </InfoMenu>
           <InfoContainer>{infoChildrenCheck(info)}</InfoContainer>
