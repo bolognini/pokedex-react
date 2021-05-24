@@ -26,7 +26,7 @@ cd coverage/lcov-report && open index.html
 
 ## Built With
 
-* [WebComponents](https://github.com/bolognini/pokedex-webcomponents) - A WebComponents UI Components lib
+* [Pokédex WebComponents](https://github.com/bolognini/pokedex-webcomponents) - A WebComponents UI Components lib
 * [Puppeteer](https://github.com/puppeteer/puppeteer) - For building a custom JSON
 * [Styled Components](https://styled-components.com/) - CSS in JS library
 * [Jest](https://jestjs.io/) - Testing framework
